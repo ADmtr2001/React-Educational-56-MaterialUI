@@ -1,10 +1,17 @@
 import React from 'react';
+import {Alert, Snackbar} from "@mui/material";
 
-const Snack = () => {
+const Snack = ({isOpen, handleClose = Function.prototype}) => {
 	return (
-		<div>
-			
-		</div>
+		<Snackbar
+			open={isOpen}
+			onClose={handleClose}
+			autoHideDuration={3000}
+		>
+			<Alert severity='success'>
+				Товар добавлен в корзину!
+			</Alert>
+		</Snackbar>
 	);
 };
 
