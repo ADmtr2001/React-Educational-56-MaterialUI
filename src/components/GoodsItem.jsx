@@ -22,11 +22,11 @@ const GoodsItem = (props) => {
 					title={name}
 					sx={{height: 140} }
 				/>
-				<CardContent>
+				<CardContent >
 					<Typography variant='h6' component='h3'>{name}</Typography>
 					<Typography variant='body1'>Цена: {price} руб.</Typography>
 				</CardContent>
-				<CardActions>
+				<CardActions >
 					<Button
 						variant='outlined'
 						onClick={() =>
