@@ -68,7 +68,7 @@ const App = () => {
 
   return (
     <>
-      <Header handleCart={() => setIsCartOpen(true)}/>
+      <Header handleCart={() => setIsCartOpen(true)} orderLength={order.length}/>
       <Container sx={{mt: '1rem'}}>
         <Search value={search} onChange={handleChange} />
         <GoodsList goods={products} setOrder={addToOrder} />
